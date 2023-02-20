@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+        <title>
+            Registration Form
+        </title>
+        <style>
+            #formContainer{
+                    width:40%;
+                    margin:auto;
+                }
+                #formC{
+                    width:100%;
+                }
+                .rows{
+                width:100%;
+                display:block;
+                }
+                .column{
+                    width:100%;
+                    display:inline-block;
+                }
+                .theLabels{
+               
+                    width:30%
+                    float:left;
+                }
+                .theInputs{
+                    width:60%;
+                    float:right;
+                }
+                .border{
+                    border: 2px solid red;
+                }
+                .text{
+                    text-align: center;
+                }
+        </style>
+    </head>
+    <body>
+        <h1 align = center>Student Registration Form</h2><br><br>
+        <div id = "formContainer">
+            <form id = "formC">
+                <div class="rows">
+                    <div class="column">
+                        <label class="theLabels">Name :</label>
+                        <input class="theInputs" type="text" id="name" name="name" required><br><br>
+                    </div>
+   
+                    <div class="column">
+                        <label class="theLabels">Phone No :</label>
+                        <input class="theInputs" type="text" id="phone" name="phone" required><br><br>
+                    </div>
+   
+                    <div class="column">
+                        <label class="theLabels">Date Of Birth :</label>
+                        <input class="theInputs" type="date" id="dob" name="dob" required><br><br>
+                    </div>
+
+                    <div class = "column">
+                        <label class="theLabels">Address :</label>
+                        <textarea class="theInputs" id="address" name="address" required cols="20" rows="5"></textarea><br><br><br>
+                        <br><br><br><br>
+                    </div>
+
+                    <div class = "column">
+                        <label class="theLabels">Gender :</label>
+                        <input type="radio" name="gender"/> Male
+                        <input type="radio" name="gender"/> Female
+                        <br><br>
+                    </div>
+   
+                    <label class="theLabels">City :</label>
+                    <select name="city" id="city">
+                        <option value="">--Select--</option>
+                        <option value="Delhi">Delhi</option>
+                        <option value="Varanasi">Varanasi</option>
+                        <option value="Mumbai">Mumbai</option>
+                    </select><br><br>
+   
+                    <label class="theLabels">Hobbies:</label>
+                    <input type="checkbox" id="hobby1" name="hobbies" value="Reading">
+                    <label for="hobby1">Music</label><br>
+                    <input type="checkbox" id="hobby2" name="hobbies" value="Travelling">
+                    <label for="hobby2">Sports</label><br>
+                    <input type="checkbox" id="hobby3" name="hobbies" value="Cooking">
+                    <label for="hobby3">Reading</label><br><br>
+   
+                    <div align="center">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </div>
+                </div>
+            </form><br><br><br>
+        </div>
+        <h1 class="text">Students Records</h1>
+        <div class="table" align="center">
+            <table class="border">
+                <thead>
+                  <tr>
+                    <th>S.No.</th>
+                    <th>Name.</th>
+                    <th>Phone no.</th>
+                    <th>Gender</th>
+                    <th>DOB</th>
+                    <th>Interests</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>Akash</td>
+                    <td>123-4-567</td>
+                    <td>Male</td>
+                    <td>12/12/1996</td>
+                    <td>Music,Dance,Cooking</td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>Akash</td>
+                    <td>122-2-567</td>
+                    <td>Male</td>
+                    <td>12/12/1996</td>
+                    <td>Dance,Travel</td>
+                  </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>
